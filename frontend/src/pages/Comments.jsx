@@ -10,7 +10,7 @@ const Comments = () => {
     useEffect( () => {
         const fetchComments = async () => {
             try {
-                const res = await fetch('http://localhost:8000/comments')
+                const res = await fetch('https://astrologer-cms-test.onrender.com/comments')
                 const data = await res.json()
                 setComments(data)
             }
